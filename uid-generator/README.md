@@ -34,9 +34,9 @@ import com.theawesomenayak.uidgenerator.StandardUniqueIdGenerator;
 
 class MyClass {
 
-    void myMethod() {
+    public Long getUniqueId() {
         UniqueIDGenerator generator = new StandardUniqueIdGenerator(1);
-        long uniqueID = generator.getId();
+        return generator.getId();
     }
 }
 ```
@@ -51,7 +51,7 @@ class MyClass {
 1. Clone this repository:
 
 ```
-git clone https://github.com/theawesomenayak/unique-id-generator
+git clone https://github.com/theawesomenayak/project-phoenix
 ```
 
 2. Import the `UniqueIDGenerator` class into your Java project.
